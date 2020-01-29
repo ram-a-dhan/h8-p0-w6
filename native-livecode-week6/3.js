@@ -41,10 +41,11 @@ X:for (i = 0; i < input_robots.length; i++) {
           // console.log([input_robots[i].name, input_robots[i].materials[j], materials[x]]);
           count++;
           materials.splice(x,1);
-          x--;
+          // x--;
           break;
         }
       }
+      
       if (count === input_robots[i].materials.length) {
         // console.log(input_robots[i].name, count);
         result.push(input_robots[i].name);

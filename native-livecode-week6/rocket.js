@@ -24,14 +24,14 @@ function putDiagonal(str) {
   var count = 0, limit = size;
 X:for (i = 0; i < result.length; i++) {
     for (j = 0; j < result[i].length; j++) {
+      
+      if (count === limit) {break X;}
+      
       if (i + j === size-1) {
-        
-        if (count === limit) {break X;}
-        
         result[i][j] = str[count];
         count++;
-
       }
+
     }
   }
   return result;

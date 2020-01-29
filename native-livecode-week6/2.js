@@ -55,7 +55,6 @@ function menuOptimizer(arr1,arr2) {
       if (tmpArr[0] === result[k][0]) {
         result[k].push(tmpArr[1]);
         tmpArr = [];
-        break;
       }
     }
   }
